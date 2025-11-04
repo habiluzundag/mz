@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mağazamız | Online Alışveriş</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #ffe5b4, #ffb347);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 90%;
+      transition: all 0.3s ease;
+    }
+
+    .container:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: #ff6600;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      color: #fff;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 15px;
+      color: #666;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+      color: white;
+    }
+
+    .hepsiburada {
+      background: #f77f00;
+    }
+
+    .trendyol {
+      background: #ff6600;
+    }
+
+    .dolap {
+      background: #007bff;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+      transform: scale(1.03);
+    }
+
+    footer {
+      margin-top: 25px;
+      font-size: 13px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">MZ</div>
+    <h1>Mağazamıza Hoş Geldiniz</h1>
+    <p>Hepsiburada, Trendyol ve Dolap üzerindeki mağazalarımızdan güvenle alışveriş yapabilirsiniz.</p>
+
+    <a href="https://www.hepsiburada.com" class="btn hepsiburada" target="_blank">Hepsiburada Mağazamız</a>
+    <a href="https://www.trendyol.com" class="btn trendyol" target="_blank">Trendyol Mağazamız</a>
+    <a href="https://www.dolap.com" class="btn dolap" target="_blank">Dolap Mağazamız</a>
+  </div>
+
+  <footer>© 2025 Mağazamız | Tüm hakları saklıdır.</footer>
+
+  <script>
+    // Basit fade-in efekti
+    document.addEventListener("DOMContentLoaded", () => {
+      const box = document.querySelector(".container");
+      box.style.opacity = "0";
+      box.style.transition = "opacity 1s ease";
+      setTimeout(() => (box.style.opacity = "1"), 200);
+    });
+  </script>
+</body>
+</html>
